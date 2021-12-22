@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tania & Rizky Wedding</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/themify-icons.css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -15,6 +14,31 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        #music{
+            cursor: pointer;
+            left: 1200px;
+            width: auto;
+            top: 25px;
+            max-width: 100%;
+            position: fixed;
+            z-index: 999;
+            box-sizing: border-box;
+        }
+        #btnMusic{
+            cursor: pointer; 
+            color: #54595F !important;
+            border-color: #54595F !important;
+            ba
+            text-align: left;
+        }
+        @media screen and (max-width: 768px) {
+            #music{
+                left: 300px!important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -41,8 +65,9 @@
                 <ul>
                     <li><a href="index.html#home">Home</a></li>
                     <li><a href="index.html#couple">Couple</a></li>
-                    <li><a href="index.html#organization">Organization</a></li>
                     <li><a href="index.html#whenwhere">When & Where</a></li>
+                    <li><a href="index.html#organization">Wedding Rundown</a></li>
+                    <li><a href="index.html#directions">Directions</a></li>
                 </ul>
             </nav>
             <!-- Sidebar Footer -->
@@ -51,6 +76,14 @@
             </div> -->
         </aside>
         <!-- Content Section -->
+        <div id="music">
+            <div id="btnMusic">
+                <h1><i class="ti-control-play" id="musicIcon"></i></h1>
+                <audio id="player" loop>
+                    <source src='musics/muara.mp3' type='audio/mpeg' />
+                </audio>
+            </div>
+        </div>
         <div id="oliven-main">
             <!-- Slider -->
             <div id="home">
@@ -95,15 +128,19 @@
             <!-- Couple -->
             <div id="couple" class="bridegroom clear section-padding bg-pink">
                 <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center animate-box" data-animate-effect="fadeInUp">
+                            <h3 class="oliven-couple-title">Meet the happy couple</h3>
+                        </div>
+                    </div>
                     <div class="row mb-60">
                         <div class="col-md-6">
                             <div class="item toright mb-30 animate-box" data-animate-effect="fadeInLeft">
                                 <div class="img"> <img src="images/queen.jpg" alt=""> </div>
                                 <div class="info valign">
                                     <div class="full-width">
-                                        <h6>Rahmahtania Mawaddah Lubis <i class="ti-heart"></i></h6> <span>The Bride</span>
-                                        <p>Putri dari Tutti Khairida Lubis</p>
-                                        
+                                        <h6>Rahma Tania Mawaddah Lubis, S.Kom.<i class="ti-heart"></i></h6> <span>The Bride</span>
+                                        <p>Putri dari Keluarga Basirun, S.Pd. dan Tuti Khairida Hanum, Am.Keb.</p>
                                     </div>
                                 </div>
                             </div>
@@ -113,17 +150,11 @@
                                 <div class="img"> <img src="images/king.jpg" alt=""> </div>
                                 <div class="info valign">
                                     <div class="full-width">
-                                        <h6>Muhammad Surya Rizky Pratama <i class="ti-heart"></i></h6> <span>The Groom</span>
-                                        <p>Putra dari Keluarga Suriyono dan Yusnidar</p>
+                                        <h6>Muhammad Surya Rizky Pratama , A.Md.T.<i class="ti-heart"></i></h6> <span>The Groom</span>
+                                        <p>Putra dari Keluarga Ir. Suriyono dan Yusnidar, S.Pd.</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 text-center animate-box" data-animate-effect="fadeInUp">
-                            <h3 class="oliven-couple-title">Are getting married!</h3>
-                            
                         </div>
                     </div>
                 </div>
@@ -161,80 +192,85 @@
                     </div>
                 </div>
             </div>
-            <!-- Organization -->
-            <div id="organization" class="organization section-padding bg-pink">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 mb-30"> 
-                            <span class="oliven-title-meta">Wedding</span>
-                            <h2 class="oliven-title">Organization</h2> 
-                        </div>
-                    </div>
-                    <div class="row bord-box bg-img" data-background="images/bride4.jpg">
-                        <div class="col-md-3 item-box">
-                            <h2 class="custom-font numb">01</h2>
-                            <h6 class="title">Ceremony</h6>
-                            <p>Delta tristiu the jusone duise vitae diam neque nivami mis est augue artine aringilla the at elit finibus vivera.</p>
-                        </div>
-                        <div class="col-md-3 item-box">
-                            <h2 class="custom-font numb">02</h2>
-                            <h6 class="title">Lunch Time</h6>
-                            <p>Delta tristiu the jusone duise vitae diam neque nivami mis est augue artine aringilla the at elit finibus vivera.</p>
-                        </div>
-                        <div class="col-md-3 item-box">
-                            <h2 class="custom-font numb">03</h2>
-                            <h6 class="title">Party</h6>
-                            <p>Delta tristiu the jusone duise vitae diam neque nivami mis est augue artine aringilla the at elit finibus vivera.</p>
-                        </div>
-                        <div class="col-md-3 item-box">
-                            <h2 class="custom-font numb">04</h2>
-                            <h6 class="title">Cake Cutting</h6>
-                            <p>Delta tristiu the jusone duise vitae diam neque nivami mis est augue artine aringilla the at elit finibus vivera.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
             <!-- When & Where -->
             <div id="whenwhere" class="whenwhere section-padding bg-pink">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 mb-30"> <span class="oliven-title-meta">Questions</span>
-                            <h2 class="oliven-title">When & Where</h2> </div>
+                            <h2 class="oliven-title">When & Where</h2>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="owl-carousel owl-theme">
-                                <div class="item">
-                                    <div class="whenwhere-img"> <img src="images/banner-1.jpg" alt=""></div>
-                                    <div class="content">
-                                        <h5>Lamaran</h5>
-                                        <p><i class="ti-location-pin"></i> Sabtu, 11 Desember 2021, Pasar 4 Tanjung Beringin, Kecamatan Hinai, Langkat,
-                                            Sumatera Utara</p>
-                                    </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <div class="whenwhere-img"> <img src="images/bride5_1.jpg" alt=""></div>
+                                <div class="content">
+                                    <h5>Akad Nikah</h5>
+                                    <p><i class="ti-location-pin"></i> Jum'at, 07 Januari 2022, Pasar 4 Tanjung Beringin, Kecamatan
+                                        Hinai, Langkat,
+                                        Sumatera Utara</p>
                                 </div>
-                                <div class="item">
-                                    <div class="whenwhere-img"> <img src="images/whenwhere/3.jpg" alt=""></div>
-                                    <div class="content">
-                                        <h5>Akad Nikah</h5>
-                                        <p><i class="ti-location-pin"></i> Jum'at, 07 Januari 2022, Pasar 4 Tanjung Beringin, Kecamatan Hinai, Langkat, Sumatera Utara</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="whenwhere-img"> <img src="images/whenwhere/1.jpg" alt=""></div>
-                                    <div class="content">
-                                        <h5>Resepsi</h5>
-                                        <p><i class="ti-location-pin"></i> Sabtu, 08 Januari 2022, Pasar 4 Tanjung Beringin, Kecamatan Hinai, Langkat, Sumatera Utara</p>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <div class="whenwhere-img"> <img src="images/whenwhere/3.jpg" alt=""></div>
+                                <div class="content">
+                                    <h5>Resepsi</h5>
+                                    <p><i class="ti-location-pin"></i> Sabtu, 08 Januari 2022, Pasar 4 Tanjung Beringin, Kecamatan
+                                        Hinai,
+                                        Langkat, Sumatera Utara</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Organization -->
+            <div id="organization" class="organization section-padding bg-pink">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 mb-30"> 
+                            <span class="oliven-title-meta">Wedding</span>
+                            <h2 class="oliven-title">Rundown</h2> 
+                        </div>
+                    </div>
+                    <div class="row bord-box bg-img" data-background="images/bridesss.jpg">
+                        <div class="col-md-3 item-box">
+                            <h2 class="custom-font numb">01</h2>
+                            <h6 class="title">Kedatangan Mempeleai Pria</h6>
+                            <p>08.00 - 10.00 WIB</p>
+                        </div>
+                        <div class="col-md-3 item-box">
+                            <h2 class="custom-font numb">02</h2>
+                            <h6 class="title">Prosesi Temu Manten</h6>
+                            <p>10.10 - 11.10 WIB</p>
+                        </div>
+                        <div class="col-md-3 item-box">
+                            <h2 class="custom-font numb">03</h2>
+                            <h6 class="title">Makan Bersama dan Ishoma</h6>
+                            <p>11.30 - 13.30 WIB</p>
+                        </div>
+                        <div class="col-md-3 item-box">
+                            <h2 class="custom-font numb">04</h2>
+                            <h6 class="title">Hiburan dan acara lainnya</h6>
+                            <p>13.30 WIB s/d selesai</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="my-box" style="padding: 60px 30px; height: 100%; background-color: #fff; border: 1px solid #f6f1f0; border-right: 0;">
+                            <h2>Attention</h2>
+                            <h6>To keep this wedding event safe from the risk of transmission of Covid-19. Before you attend this event, please bear in mind to keep using mask, washing hands, and keep the distance.</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
             
             <!-- Directions -->
-            <div id="whenwhere" class="whenwhere section-padding bg-pink">
+            <div id="directions" class="whenwhere section-padding bg-pink">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 mb-30"> <span class="oliven-title-meta">Directions</span>
@@ -243,7 +279,9 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.2193252106!2d98.43173702914798!3d3.8365046379252608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303728f1003217cb%3A0xf0b7979b5d9ffa03!2sJl.%20Pendidikan%2C%20Tj.%20Mulia%2C%20Hinai%2C%20Kabupaten%20Langkat%2C%20Sumatera%20Utara%2020854!5e0!3m2!1sid!2sid!4v1640180575237!5m2!1sid!2sid"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -253,6 +291,7 @@
                 <div class="oliven-narrow-content">
                     <div class="row">
                         <div class="col-md-12 text-center">
+                            <h4>We really look forward to your presence!</h4>
                             <h2>
                                 <a href="index.html"><img src="images/logo.png" alt=""><span>Tania <small>&</small> Rizky</span></a>
                             </h2>
@@ -273,6 +312,26 @@
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            var audio = document.getElementById("player");
+            let firstPlay = true;
+            $(document).on('click', function(){
+                if (firstPlay) {
+                    audio.play();
+                    $('#musicIcon').attr('class', 'ti-control-pause');
+                    firstPlay = false;
+                }
+            });
+                $('#btnMusic').on('click', function () {
+                    if (audio.paused) {
+                        audio.play();
+                        $('#musicIcon').attr('class', 'ti-control-pause');
+                    } else {
+                        audio.pause();
+                        $('#musicIcon').attr('class', 'ti-control-play');
+                    }
+                });
+        </script>
     </div>
 </body>
 
