@@ -38,10 +38,110 @@
                 left: 300px!important;
             }
         }
+        .modalx{
+                position: fixed;
+                z-index: 999999999999999;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: transparent;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                transform: translateY(0);
+        }
+        .modalx-content{
+            background-color: transparent;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 2002;
+            top: 10px;
+            color: #fff;
+            left: 0;
+        }
+        .info-modalx{
+            width: 100%;
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .dear{
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .couple{
+            margin-top: 200px;
+            font-family: "Gabriola", Sans-serif;
+            font-size: 80px;
+            text-align: center;
+        }
+        .name{
+            margin-top: 8px;
+            font-family: "Gabriola", Sans-serif;
+            text-align: center;
+            font-size: 30px;
+        }
+        .sorry{
+            text-align: center;
+            margin-top: 8px;
+        }
+        .invitation-button:hover{
+            background-color: #54595F!important;
+            color: #fff!important;
+        }
+        .invitation-button{
+            background-color: #030101;
+            border-radius: 50px 50px 50px 50px;
+            border-width: 1px 1px 1px 1px;
+            border-style: solid;
+            display: inline-block;
+            line-height: 1;
+            font-size: 15px;
+            color: #fff;
+            fill: #fff;
+            text-align: center;
+            transition: all .3s;
+            padding-top: 16px;
+            padding-top: 16px;
+            padding-right: 25px;
+            padding-bottom: 16px;
+            padding-left: 25px;
+            cursor: pointer;
+    }
+    @media screen and (max-width: 768px){
+        .couple{
+            margin-top: 50%;
+            font-family: "Gabriola", Sans-serif;
+            font-size: 50px;
+            text-align: center;
+        }
+    }
     </style>
 </head>
 
 <body>
+    <div id="coverInvitation" class="modalx" style="background-image: linear-gradient(to top, rgba(12, 12, 12, 0), rgba(32, 30, 32, 0.73)),url(images/wd.jpg);">
+        <div class="overlay">
+            <div class="content-modalx">
+                <div class="info-modalx">
+                    <div class="couple text-white">Tania & Rizky</div>
+                    <div class="dear text-white">Dear</div>
+                    <div class="name text-white">Yoga Muttaqin</div>
+                    <div class="sorry text-white">Mohon maaf apabila terdapat penulisan nama dan gelar</div>
+                    <div class="row justify-content-center mt-2">
+                        <button class="invitation-button" id="openInvitation">
+                            <i class="ti-location-arrow"></i>
+                            Open Invitation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Preloader -->
     <div class="preloader">
         <div class="lds-heart">
@@ -99,7 +199,6 @@
                                             <div class="slider-text-inner">
                                                 <div class="desc">
                                                     <h2>Tania & Rizky Wedding Invitation</h2>
-                                                    <h6>Dear : Yoga Muttaqin</h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -334,6 +433,13 @@
                         $('#musicIcon').attr('class', 'ti-control-play');
                     }
                 });
+            $('#openInvitation').on('click', function(){
+                $('#coverInvitation').addClass('fade');
+                setTimeout(function(){
+                    $('#coverInvitation').remove();
+                }, 200);
+                
+            });
         </script>
     </div>
 </body>
